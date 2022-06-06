@@ -1,0 +1,15 @@
+name: upload
+
+on:
+  push:
+    branches:
+    - assets
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    timeout-minutes: 180
+
+    steps:
+      - run: echo OK
